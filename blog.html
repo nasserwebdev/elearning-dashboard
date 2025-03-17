@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المدونة</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <nav class="fixed-top">
+        <header
+          class="header d-flex justify-content-between align-items-center py-1"
+        >
+          <div class="right-header d-flex align-items-center gap-3">
+            <div class="logo d-none d-md-block">
+              <a href="/"><img src="assets/images/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="px-2">
+              <a href="#"
+                ><i id="sidebar-toggle" class="fa-solid fa-chart-bar"></i
+              ></a>
+            </div>
+            <form action="" class="d-none d-md-block">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب اسم المنتج للبحث"
+              />
+            </form>
+          </div>
+          <div class="left-header d-flex align-items-center gap-3 px-3">
+            <div class="icons d-flex gap-3"> 
+              <div class="messages-container position-relative">
+                <i class="fa-regular fa-comment"></i>
+                <ul class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>أحدث الرسائل</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الرسائل</a>
+                </ul>
+              </div>
+              <div id="notification-container" class="notification-container position-relative">
+                <i class="fa-regular fa-bell bell"></i
+                  >
+                <ul id="notification-area" class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>الاشعارات</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الاشعارات</a>
+                </ul>
+              </div>
+            </div>
+            <div class="avatar position-relative">
+              <img src="assets/images/avatar.jpg" alt="Avatar Profile" />
+              <ul id="avatar-area" class="messages-area avatar-area position-absolute text-center">
+                <div class="avatar-header d-flex align-items-center gap-3 m-3">
+                  <img src="assets/images/avatar.jpg" alt="">
+                  <h3>أمير محمد</h3>
+                </div>
+                <li><a href="">المف الشخصي</a></li>
+                <li><a href="">الاعدادات</a></li>
+                <li><a href="">مركز المساعدة</a></li>
+                <li><a href="">تسجيل الخروج</a></li>
+              </ul>
+            </div>
+            <a data-bs-toggle="offcanvas" href="#active-users"
+              ><i class="fa-solid fa-bars-staggered active-users"></i
+            ></a>
+          </div>
+        </header>
+      </nav>
+      <div id="sidebar" class="sidebar">
+        <div class="profile">
+          <img src="assets/images/avatar.jpg" alt="" />
+          <h3>أمير محمد</h3>
+        </div>
+        <ul class="ul-sidebar">
+          <li class="mb-2">
+            <i class="fas fa-home fs-5"></i>
+            <a href="/" class="m-r-10">الرئيسية</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-th fs-5"></i>
+            <a href="categories.html" class="m-r-10">التصنيفات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-list-alt fs-5"></i>
+            <a href="courses.html" class="m-r-10">الكورسات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-graduation-cap fs-5"></i>
+            <a href="bootcamps.html" class="m-r-10">الدبلومات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-user fs-5"></i>
+            <a href="students.html" class="m-r-10">كافة الطلاب</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-chalkboard fs-5"></i>
+            <a href="instructors.html" class="m-r-10">المدربين</a>
+          </li>
+          <li class="mb-2 active">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">المدونة</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">الوسائط</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-cog fs-5"></i>
+            <a href="settings.html" class="m-r-10">الاعدادات</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content" class="content p-3">
+        <div class="inner-content">
+          <div class="container-fluid">
+            <h4>كافة المقالات</h4>
+            <div class="row">
+              <div class="col">
+                <a
+                  href="add-post.html"
+                  type="button"
+                  class="btn btn-danger my-3" 
+                >
+                  اضافة مقالة جديدة
+                </a>
+                <div class="card p-3">
+                  <table
+                    id="table-list"
+                    class="table table-hover table-striped display"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">عنوان المقال</th>
+                        <th scope="col">التصنيف</th>
+                        <th scope="col">تاريخ النشر</th>
+                        <th scope="col">الحالة</th>
+                        <th scope="col">الصورة</th>
+                        <th scope="col">العمليات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>أساسيات البرمجة بلغة بايثون</td>
+                        <td>برمجة</td>
+                        <td>4/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>كيفية تصميم واجهات مستخدم جذابة</td>
+                        <td>تصميم</td>
+                        <td>5/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>استراتيجيات التسويق الرقمي الناجحة</td>
+                        <td>تسويق</td>
+                        <td>6/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>أفضل الممارسات لتطوير تطبيقات الويب</td>
+                        <td>برمجة</td>
+                        <td>7/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>أساسيات تحسين محركات البحث (SEO)</td>
+                        <td>تسويق</td>
+                        <td>8/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>كيفية تصميم الشعارات الاحترافية</td>
+                        <td>تصميم</td>
+                        <td>9/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>أهمية تجربة المستخدم في التصميم</td>
+                        <td>تصميم</td>
+                        <td>10/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>استراتيجيات الإعلان عبر الإنترنت</td>
+                        <td>تسويق</td>
+                        <td>11/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>كيفية كتابة محتوى تسويقي فعال</td>
+                        <td>تسويق</td>
+                        <td>12/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>أهمية التحليل البياني في التسويق</td>
+                        <td>تسويق</td>
+                        <td>13/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>أهمية البرمجة في العصر الرقمي</td>
+                        <td>برمجة</td>
+                        <td>14/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>التسويق عبر المحتوى وأفضل الممارسات</td>
+                        <td>تسويق</td>
+                        <td>15/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>التصميم الجرافيكي وتأثيره على العلامات التجارية</td>
+                        <td>تصميم</td>
+                        <td>16/3/2025</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="">عرض المقال</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-post">حذف المقال</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Delete Post -->
+    <div
+      class="modal fade"
+      id="delete-post"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              حذف المقال
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 alert alert-danger">
+                هل أنت متاكد من عملية الحذف المقال؟
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  اغلاق
+                </button>
+                <button type="button" class="btn btn-primary">
+                  حذف المقال
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Delete Post -->
+
+    <!-- Active Users -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="active-users"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          المستخدمين المتصلين
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="alert alert-success">كافة المستخدمين النشطين</div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

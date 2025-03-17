@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="loader" class="">
+      <img width="75" src="assets/images/tube-spinner.svg" alt="Loader">
+    </div>
+    <div class="main-wrapper">
+      <nav class="fixed-top">
+        <header
+          class="header d-flex justify-content-between align-items-center py-1"
+        >
+          <div class="right-header d-flex align-items-center gap-3">
+            <div class="logo d-none d-md-block">
+              <a href="/"><img src="assets/images/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="px-2">
+              <a href="#"
+                ><i id="sidebar-toggle" class="fa-solid fa-chart-bar"></i
+              ></a>
+            </div>
+            <form action="" class="d-none d-md-block">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب اسم المنتج للبحث"
+              />
+            </form>
+          </div>
+          <div class="left-header d-flex align-items-center gap-3 px-3">
+            <div class="icons d-flex gap-3"> 
+              <div class="messages-container position-relative">
+                <i class="fa-regular fa-comment"></i>
+                <ul class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>أحدث الرسائل</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الرسائل</a>
+                </ul>
+              </div>
+              <div id="notification-container" class="notification-container position-relative">
+                <i class="fa-regular fa-bell bell"></i
+                  >
+                <ul id="notification-area" class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>الاشعارات</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الاشعارات</a>
+                </ul>
+              </div>
+            </div>
+            <div class="avatar position-relative">
+              <img src="assets/images/avatar.jpg" alt="Avatar Profile" />
+              <ul id="avatar-area" class="messages-area avatar-area position-absolute text-center">
+                <div class="avatar-header d-flex align-items-center gap-3 m-3">
+                  <img src="assets/images/avatar.jpg" alt="">
+                  <h3>أمير محمد</h3>
+                </div>
+                <li><a href="">المف الشخصي</a></li>
+                <li><a href="">الاعدادات</a></li>
+                <li><a href="">مركز المساعدة</a></li>
+                <li><a href="">تسجيل الخروج</a></li>
+              </ul>
+            </div>
+            <a data-bs-toggle="offcanvas" href="#active-users"
+              ><i class="fa-solid fa-bars-staggered active-users"></i
+            ></a>
+          </div>
+        </header>
+      </nav>
+      <div id="sidebar" class="sidebar">
+        <div class="profile">
+          <img src="assets/images/avatar.jpg" alt="" />
+          <h3>أمير محمد</h3>
+        </div>
+        <ul class="ul-sidebar">
+          <li class="mb-2">
+            <i class="fas fa-home fs-5"></i>
+            <a href="/" class="m-r-10">الرئيسية</a>
+          </li>
+          <li class="mb-2 active">
+            <i class="fas fa-th fs-5"></i>
+            <a href="categories.html" class="m-r-10">التصنيفات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-list-alt fs-5"></i>
+            <a href="courses.html" class="m-r-10">الكورسات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-graduation-cap fs-5"></i>
+            <a href="bootcamps.html" class="m-r-10">الدبلومات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-user fs-5"></i>
+            <a href="students.html" class="m-r-10">كافة الطلاب</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-chalkboard fs-5"></i>
+            <a href="instructors.html" class="m-r-10">المدربين</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">المدونة</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">الوسائط</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-cog fs-5"></i>
+            <a href="settings.html" class="m-r-10">الاعدادات</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content" class="content p-3">
+        <div class="inner-content">
+          <div class="container-fluid">
+            <div class="cat-header my-2">
+              <h4 class="title">جميع التصنيفات (6)</h4>
+              <a href="#">أضف تصنيف جديد</a>
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/Web-Development.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-code"></i>
+                        تصميم وبرمجة المواقع
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-brands fa-laravel"></i> Larvel</li>
+                      <li><i class="fa-solid fa-expand"></i> Responsive Design</li>
+                      <li><i class="fa-solid fa-code"></i> Bootstrap</li>
+                      <li><i class="fa-brands fa-html5"></i> HTML & CSS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/ai.png" class="card-img-top" alt="Data Science">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-database"></i>
+                        علم البيانات
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-brands fa-python"></i> Python</li>
+                      <li><i class="fa-solid fa-chart-line"></i> تحليل البيانات</li>
+                      <li><i class="fa-brands fa-r-project"></i> R Programming</li>
+                      <li><i class="fa-solid fa-project-diagram"></i> Machine Learning</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/dm.png" class="card-img-top" alt="Digital Marketing">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        التسويق الرقمي
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-solid fa-chart-pie"></i> SEO</li>
+                      <li><i class="fa-solid fa-share-alt"></i> Social Media Marketing</li>
+                      <li><i class="fa-solid fa-envelope"></i> Email Marketing</li>
+                      <li><i class="fa-solid fa-ad"></i> PPC Advertising</li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/graphic-design.png" class="card-img-top" alt="Graphic Design">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-paint-brush"></i>
+                        تصميم الجرافيك
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-solid fa-layer-group"></i> Adobe Photoshop</li>
+                      <li><i class="fa-solid fa-vector-square"></i> Adobe Illustrator</li>
+                      <li><i class="fa-solid fa-image"></i> Branding</li>
+                      <li><i class="fa-solid fa-file-video"></i> Motion Graphics</li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/cyper-security.png" class="card-img-top" alt="Cyber Security">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-lock"></i>
+                        الأمن السيبراني
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-solid fa-shield-alt"></i> Ethical Hacking</li>
+                      <li><i class="fa-solid fa-user-shield"></i> Network Security</li>
+                      <li><i class="fa-solid fa-key"></i> Cryptography</li>
+                      <li><i class="fa-solid fa-triangle-exclamation"></i> Threat Intelligence</li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div class="card">
+                  <img src="assets/images/cloud-computing.png" class="card-img-top" alt="Cloud Computing">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h5 class="c-title d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-cloud"></i>
+                        الحوسبة السحابية
+                      </h5>
+                      <p class="card-text c-text">(4)</p>
+                    </div>
+                    <ul class="c-menu mt-1">
+                      <li><i class="fa-solid fa-server"></i> AWS</li>
+                      <li><i class="fa-solid fa-cloud-upload-alt"></i> Azure</li>
+                      <li><i class="fa-solid fa-cloud-download-alt"></i> Google Cloud</li>
+                      <li><i class="fa-solid fa-cogs"></i> DevOps</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Users -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="active-users"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          المستخدمين المتصلين
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="alert alert-success">كافة المستخدمين النشطين</div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

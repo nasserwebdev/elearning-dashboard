@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كافة المدربين</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <nav class="fixed-top">
+        <header
+          class="header d-flex justify-content-between align-items-center py-1"
+        >
+          <div class="right-header d-flex align-items-center gap-3">
+            <div class="logo d-none d-md-block">
+              <a href="/"><img src="assets/images/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="px-2">
+              <a href="#"
+                ><i id="sidebar-toggle" class="fa-solid fa-chart-bar"></i
+              ></a>
+            </div>
+            <form action="" class="d-none d-md-block">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب اسم المنتج للبحث"
+              />
+            </form>
+          </div>
+          <div class="left-header d-flex align-items-center gap-3 px-3">
+            <div class="icons d-flex gap-3"> 
+              <div class="messages-container position-relative">
+                <i class="fa-regular fa-comment"></i>
+                <ul class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>أحدث الرسائل</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الرسائل</a>
+                </ul>
+              </div>
+              <div id="notification-container" class="notification-container position-relative">
+                <i class="fa-regular fa-bell bell"></i
+                  >
+                <ul id="notification-area" class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>الاشعارات</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الاشعارات</a>
+                </ul>
+              </div>
+            </div>
+            <div class="avatar position-relative">
+              <img src="assets/images/avatar.jpg" alt="Avatar Profile" />
+              <ul id="avatar-area" class="messages-area avatar-area position-absolute text-center">
+                <div class="avatar-header d-flex align-items-center gap-3 m-3">
+                  <img src="assets/images/avatar.jpg" alt="">
+                  <h3>أمير محمد</h3>
+                </div>
+                <li><a href="">المف الشخصي</a></li>
+                <li><a href="">الاعدادات</a></li>
+                <li><a href="">مركز المساعدة</a></li>
+                <li><a href="">تسجيل الخروج</a></li>
+              </ul>
+            </div>
+            <a data-bs-toggle="offcanvas" href="#active-users"
+              ><i class="fa-solid fa-bars-staggered active-users"></i
+            ></a>
+          </div>
+        </header>
+      </nav>
+      <div id="sidebar" class="sidebar">
+        <div class="profile">
+          <img src="assets/images/avatar.jpg" alt="" />
+          <h3>أمير محمد</h3>
+        </div>
+        <ul class="ul-sidebar">
+          <li class="mb-2">
+            <i class="fas fa-home fs-5"></i>
+            <a href="/" class="m-r-10">الرئيسية</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-th fs-5"></i>
+            <a href="categories.html" class="m-r-10">التصنيفات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-list-alt fs-5"></i>
+            <a href="courses.html" class="m-r-10">الكورسات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-graduation-cap fs-5"></i>
+            <a href="bootcamps.html" class="m-r-10">الدبلومات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-user fs-5"></i>
+            <a href="students.html" class="m-r-10">كافة الطلاب</a>
+          </li>
+          <li class="mb-2 active">
+            <i class="fas fa-chalkboard fs-5"></i>
+            <a href="instructors.html" class="m-r-10">المدربين</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">المدونة</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">الوسائط</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-cog fs-5"></i>
+            <a href="settings.html" class="m-r-10">الاعدادات</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content" class="content p-3">
+        <div class="inner-content">
+          <div class="container-fluid">
+            <h4>كافة الطلاب</h4>
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-danger my-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#add-instructor"
+                >
+                  اضافة مدرب جديد
+                </button>
+                <div class="card p-3">
+                  <table
+                    id="table-list"
+                    class="table table-hover table-striped display"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">اسم المدرب</th>
+                        <th scope="col">الهاتف</th>
+                        <th scope="col">البريد الالكتروني</th>
+                        <th scope="col">الحالة</th>
+                        <th scope="col">الصورة</th>
+                        <th scope="col">العمليات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>أحمد علي</td>
+                        <td>ahmed@gmail.com</td>
+                        <td>0787654321</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>فاطمة الزهراء</td>
+                        <td>fatima@gmail.com</td>
+                        <td>0781234567</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>محمد سعيد</td>
+                        <td>mohamed@gmail.com</td>
+                        <td>0789876543</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>علي حسن</td>
+                        <td>ali@gmail.com</td>
+                        <td>0786543210</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>رانيا محمد</td>
+                        <td>rania@gmail.com</td>
+                        <td>0783212345</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>عائشة أحمد</td>
+                        <td>aisha@gmail.com</td>
+                        <td>0789876544</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>رمزي عادل</td>
+                        <td>ramzi@gmail.com</td>
+                        <td>0786547891</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>فهد جاسم</td>
+                        <td>fahd@gmail.com</td>
+                        <td>0783216542</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>ليلى سعيد</td>
+                        <td>leila@gmail.com</td>
+                        <td>0789876545</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td>طارق غانم</td>
+                        <td>tareq@gmail.com</td>
+                        <td>0786543211</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td>نجوى كمال</td>
+                        <td>najwa@gmail.com</td>
+                        <td>0783219876</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td>علياء عادل</td>
+                        <td>alia@gmail.com</td>
+                        <td>0786543218</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td>سليم رمضان</td>
+                        <td>salim@gmail.com</td>
+                        <td>0789876549</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td>هالة ناصر</td>
+                        <td>hala@gmail.com</td>
+                        <td>0783214560</td>
+                        <td>
+                          <div style="width: 10px; height: 10px" class="spinner-grow text-success" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div>
+                          فعال
+                        </td>
+                        <td>
+                          <img class="rounded-circle" width="50" src="assets/images/avatar.jpg" alt="" />
+                        </td>
+                        <td class="d-flex flex-wrap flex-md-nowrap gap-2">
+                          <div class="dropdown">
+                            <button class="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              العمليات
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-instructor">حذف المدرب</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#edit-instructor">ت
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Add instructor -->
+    <div
+      class="modal fade"
+      id="add-instructor"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              اضافة مدرب جديد
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">اسم المدرب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال اسم المدرب"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">البريد الالكتروني</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال البريد الالكتروني"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">رقم الهاتف</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال رقم الهاتف"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">رقم المدرب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال رقم المدرب"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">التفاصيل</label>
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label"
+                  >تحميل صورة المدرب</label
+                >
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-primary">
+              حفظ بيانات المدرب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Add instructor -->
+
+    <!-- Start Edit instructor -->
+    <div
+      class="modal fade"
+      id="edit-instructor"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              تعديل بيانات المدرب
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">اسم المدرب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال اسم المدرب"
+                    value="فاطمة علي"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">البريد الالكتروني</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال البريد الالكتروني"
+                    value="fatma@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">رقم الهاتف</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال رقم الهاتف"
+                    value="0787654321"
+                  />
+                </div>
+                <div class="mb-3 col">
+                  <label for="name" class="form-label">رقم المدرب</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="الرجاء ادخال رقم المدرب"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label">التفاصيل</label>
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="formFile" class="form-label"
+                  >تحميل صورة المدرب</label
+                >
+                <input class="form-control" type="file" id="formFile" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              اغلاق
+            </button>
+            <button type="button" class="btn btn-primary">
+              تعديل بيانات المدرب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Edit instructor -->
+
+    <!-- Start Delete instructor -->
+    <div
+      class="modal fade"
+      id="delete-instructor"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              حذف بيانات المدرب
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 alert alert-danger">
+                هل أنت متاكد من عملية الحذف للمدرب؟
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  اغلاق
+                </button>
+                <button type="button" class="btn btn-primary">
+                  حذف بيانات المدرب
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Delete instructor -->
+
+    <!-- Active Users -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="active-users"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          المستخدمين المتصلين
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="alert alert-success">كافة المستخدمين النشطين</div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

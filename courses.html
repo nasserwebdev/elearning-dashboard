@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الكورسات</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <nav class="fixed-top">
+        <header
+          class="header d-flex justify-content-between align-items-center py-1"
+        >
+          <div class="right-header d-flex align-items-center gap-3">
+            <div class="logo d-none d-md-block">
+              <a href="/"><img src="assets/images/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="px-2">
+              <a href="#"
+                ><i id="sidebar-toggle" class="fa-solid fa-chart-bar"></i
+              ></a>
+            </div>
+            <form action="" class="d-none d-md-block">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب اسم المنتج للبحث"
+              />
+            </form>
+          </div>
+          <div class="left-header d-flex align-items-center gap-3 px-3">
+            <div class="icons d-flex gap-3"> 
+              <div class="messages-container position-relative">
+                <i class="fa-regular fa-comment"></i>
+                <ul class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>أحدث الرسائل</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right on">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p class="fw-bold">هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg fw-bold"></i>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3 item-menu-right">
+                      <img src="assets/images/avatar.jpg" alt="">
+                      <div>
+                        <h4 class="text-start mt-3">محمد الخالد</h4>
+                        <p>هل يمكنك مساعدتي في الحصول...</p>
+                      </div>
+                    </div>
+                    <i class="fa-regular fa-comment icon-msg"></i>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الرسائل</a>
+                </ul>
+              </div>
+              <div id="notification-container" class="notification-container position-relative">
+                <i class="fa-regular fa-bell bell"></i
+                  >
+                <ul id="notification-area" class="messages-area position-absolute text-center">
+                  <div class="messages-header">
+                    <h3>الاشعارات</h3>
+                  </div>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="d-flex justify-content-between align-items-center">
+                    <div class="notification-container">
+                      <div class="notification-body d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-lightbulb notification-image"></i>
+                        <a class="notification-msg read" href="">مرحبا بك في المعسكر الأول Front End</a>
+                      </div>
+                      <div class="notification-footer d-flex justify-content-between align-items-center">
+                        <div class="time">3 أيام مضى</div>
+                        <a href="" class="view-more">معاينة الاشعار الكامل</a>
+                      </div>
+                    </div>
+                  </li>
+                  <a class="d-block my-2" href="#">كافة الاشعارات</a>
+                </ul>
+              </div>
+            </div>
+            <div class="avatar position-relative">
+              <img src="assets/images/avatar.jpg" alt="Avatar Profile" />
+              <ul id="avatar-area" class="messages-area avatar-area position-absolute text-center">
+                <div class="avatar-header d-flex align-items-center gap-3 m-3">
+                  <img src="assets/images/avatar.jpg" alt="">
+                  <h3>أمير محمد</h3>
+                </div>
+                <li><a href="">المف الشخصي</a></li>
+                <li><a href="">الاعدادات</a></li>
+                <li><a href="">مركز المساعدة</a></li>
+                <li><a href="">تسجيل الخروج</a></li>
+              </ul>
+            </div>
+            <a data-bs-toggle="offcanvas" href="#active-users"
+              ><i class="fa-solid fa-bars-staggered active-users"></i
+            ></a>
+          </div>
+        </header>
+      </nav>
+      <div id="sidebar" class="sidebar">
+        <div class="profile">
+          <img src="assets/images/avatar.jpg" alt="" />
+          <h3>أمير محمد</h3>
+        </div>
+        <ul class="ul-sidebar">
+          <li class="mb-2">
+            <i class="fas fa-home fs-5"></i>
+            <a href="/" class="m-r-10">الرئيسية</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-th fs-5"></i>
+            <a href="categories.html" class="m-r-10">التصنيفات</a>
+          </li>
+          <li class="mb-2 active">
+            <i class="fas fa-list-alt fs-5"></i>
+            <a href="courses.html" class="m-r-10">الكورسات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-graduation-cap fs-5"></i>
+            <a href="bootcamps.html" class="m-r-10">الدبلومات</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-user fs-5"></i>
+            <a href="students.html" class="m-r-10">كافة الطلاب</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-chalkboard fs-5"></i>
+            <a href="instructors.html" class="m-r-10">المدربين</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">المدونة</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-blog fs-5"></i>
+            <a href="blog.html" class="m-r-10">الوسائط</a>
+          </li>
+          <li class="mb-2">
+            <i class="fas fa-cog fs-5"></i>
+            <a href="settings.html" class="m-r-10">الاعدادات</a>
+          </li>
+        </ul>
+      </div>
+      <div id="content" class="content p-3">
+        <div class="inner-content">
+          <div class="container-fluid">
+            <h4>الكورسات</h4>
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-danger my-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#add-student"
+                >
+                  اضافة كورس جديد
+                </button>
+                <div class="card p-3">
+                  <table
+                    id="table-list"
+                    class="table table-hover table-striped display courses-list"
+                  >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">العنوان</th>
+                        <th scope="col">التصنيف</th>
+                        <th scope="col">الدروس والأقسام</th>
+                        <th scope="col">عدد الطلاب</th>
+                        <th scope="col">الحالة</th>
+                        <th scope="col">السعر</th>
+                        <th scope="col">العمليات</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td class="course-title">
+                          <a href="">تطوير الويب باستخدام HTML & CSS</a>
+                          <p>المدرب: ياسين جوخدار</p>
+                          <p>الايميل: yassin@gmail.com</p>
+                        </td>
+                        <td class="course-cat">تصميم وبرمجة المواقع</td>
+                        <td>
+                          الدروس: 99
+                          <br>
+                          الأقسام: 6
+                        </td>
+                        <td>150 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$75</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td class="course-title">
+                          <a href="">برمجة تطبيقات الويب باستخدام PHP</a>
+                          <p>المدرب: رانيا محمد</p>
+                          <p>الايميل: rania@gmail.com</p>
+                        </td>
+                        <td class="course-cat">تصميم وبرمجة المواقع</td>
+                        <td>
+                          الدروس: 80
+                          <br>
+                          الأقسام: 8
+                        </td>
+                        <td>100 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$90</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td class="course-title">
+                          <a href="">تصميم الويب باستخدام Bootstrap</a>
+                          <p>المدرب: ليلى أحمد</p>
+                          <p>الايميل: leila@gmail.com</p>
+                        </td>
+                        <td class="course-cat">تصميم وبرمجة المواقع</td>
+                        <td>
+                          الدروس: 75
+                          <br>
+                          الأقسام: 7
+                        </td>
+                        <td>80 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$70</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td class="course-title">
+                          <a href="">أساسيات علم البيانات باستخدام Python</a>
+                          <p>المدرب: محمد سعيد</p>
+                          <p>الايميل: mohamed@gmail.com</p>
+                        </td>
+                        <td class="course-cat">علم البيانات</td>
+                        <td>
+                          الدروس: 85
+                          <br>
+                          الأقسام: 9
+                        </td>
+                        <td>200 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$95</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td class="course-title">
+                          <a href="">تحليل البيانات باستخدام R</a>
+                          <p>المدرب: فاطمة الزهراء</p>
+                          <p>الايميل: fatima@gmail.com</p>
+                        </td>
+                        <td class="course-cat">علم البيانات</td>
+                        <td>
+                          الدروس: 78
+                          <br>
+                          الأقسام: 8
+                        </td>
+                        <td>120 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$80</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td class="course-title">
+                          <a href="">أساسيات التسويق الرقمي</a>
+                          <p>المدرب: سامي يوسف</p>
+                          <p>الايميل: samy@gmail.com</p>
+                        </td>
+                        <td class="course-cat">التسويق الرقمي</td>
+                        <td>
+                          الدروس: 76
+                          <br>
+                          الأقسام: 7
+                        </td>
+                        <td>90 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$85</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td class="course-title">
+                          <a href="">استراتيجيات SEO المتقدمة</a>
+                          <p>المدرب: رنا حسنين</p>
+                          <p>الايميل: rana@gmail.com</p>
+                        </td>
+                        <td class="course-cat">التسويق الرقمي</td>
+                        <td>
+                          الدروس: 72
+                          <br>
+                          الأقسام: 7
+                        </td>
+                        <td>110 طالب</td>
+                        <td><span class="badge bg-danger">غير فعال</span></td>
+                        <td>$75</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td class="course-title">
+                          <a href="">تصميم الجرافيك باستخدام Photoshop</a>
+                          <p>المدرب: خالد جلال</p>
+                          <p>الايميل: khalid@gmail.com</p>
+                        </td>
+                        <td class="course-cat">تصميم الجرافيك</td>
+                        <td>
+                          الدروس: 77
+                          <br>
+                          الأقسام: 7
+                        </td>
+                        <td>130 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$90</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td class="course-title">
+                          <a href="">تطوير تطبيقات الجوال باستخدام Flutter</a>
+                          <p>المدرب: نادر فريد</p>
+                          <p>الايميل: nader@gmail.com</p>
+                        </td>
+                        <td class="course-cat">برمجة التطبيقات</td>
+                        <td>
+                          الدروس: 82
+                          <br>
+                          الأقسام: 8
+                        </td>
+                        <td>140 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$95</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">10</th>
+                        <td class="course-title">
+                          <a href="">أساسيات الأمان السيبراني</a>
+                          <p>المدرب: سليم الشامي</p>
+                          <p>الايميل: salim@gmail.com</p>
+                        </td>
+                        <td class="course-cat">الأمن السيبراني</td>
+                        <td>
+                          الدروس: 73
+                          <br>
+                          الأقسام: 6
+                        </td>
+                        <td>75 طالب</td>
+                        <td><span class="badge bg-danger">غير فعال</span></td>
+                        <td>$80</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">11</th>
+                        <td class="course-title">
+                          <a href="">تحليل البيانات الضخمة</a>
+                          <p>المدرب: ياسمين سامي</p>
+                          <p>الايميل: yasmin@gmail.com</p>
+                        </td>
+                        <td class="course-cat">علم البيانات</td>
+                        <td>
+                          الدروس: 81
+                          <br>
+                          الأقسام: 8
+                        </td>
+                        <td>160 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$90</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">12</th>
+                        <td class="course-title">
+                          <a href="">استراتيجيات التسويق عبر وسائل التواصل الاجتماعي</a>
+                          <p>المدرب: هالة علي</p>
+                          <p>الايميل: hala@gmail.com</p>
+                        </td>
+                        <td class="course-cat">التسويق الرقمي</td>
+                        <td>
+                          الدروس: 70
+                          <br>
+                          الأقسام: 6
+                        </td>
+                        <td>95 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$60</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">13</th>
+                        <td class="course-title">
+                          <a href="">أساسيات البرمجة بلغة JavaScript</a>
+                          <p>المدرب: أمجد عبد الله</p>
+                          <p>الايميل: amjad@gmail.com</p>
+                        </td>
+                        <td class="course-cat">برمجة التطبيقات</td>
+                        <td>
+                          الدروس: 74
+                          <br>
+                          الأقسام: 6
+                        </td>
+                        <td>110 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$65</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">14</th>
+                        <td class="course-title">
+                          <a href="">تطوير التطبيقات باستخدام React</a>
+                          <p>المدرب: رامي عز الدين</p>
+                          <p>الايميل: rami@gmail.com</p>
+                        </td>
+                        <td class="course-cat">برمجة التطبيقات</td>
+                        <td>
+                          الدروس: 79
+                          <br>
+                          الأقسام: 8
+                        </td>
+                        <td>130 طالب</td>
+                        <td><span class="badge bg-success">فعال</span></td>
+                        <td>$85</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-sm dropdown-toggle btn-options" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#delete-course">حذف</a></li>
+                              <li><a class="dropdown-item" href="#">التفاصيل</a></li>
+                              <li><a class="dropdown-item" data-bs-toggle="modal" href="#">تعديل</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Users -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="active-users"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          المستخدمين المتصلين
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="alert alert-success">كافة المستخدمين النشطين</div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+        <div
+          class="item-side-menu d-flex justify-content-between align-items-center mb-3"
+        >
+          <div class="avatar-info d-flex align-items-center gap-3">
+            <div
+              style="width: 10px; height: 10px"
+              class="spinner-grow text-success grow-user"
+              role="status"
+            >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <img src="assets/images/avatar.jpg" alt="Avatar" />
+            <h4>أيمن الأحمد</h4>
+          </div>
+          <div class="contact-info">
+            <i class="fa-brands fa-square-whatsapp whatsapp-icon"></i>
+            <i class="fa-brands fa-facebook-messenger messenger-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Delete Course -->
+    <div
+      class="modal fade"
+      id="delete-course"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              حذف بيانات الكورس
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3 alert alert-danger">
+                هل أنت متاكد من عملية الحذف للكورس؟
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-bs-dismiss="modal"
+                >
+                  اغلاق
+                </button>
+                <button type="button" class="btn btn-primary">
+                  حذف بيانات الكورس
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Delete Student -->
+
+    <script src="assets/js/datatables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

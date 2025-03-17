@@ -1,0 +1,39 @@
+https://demo.creativeitem.com/index.php?product=academy_laravel
+https://demo.creativeitem.com/academy-laravel/admin/dashboard
+
+Select2 JS Library
+https://select2.org/
+
+bootstrap tags js library
+
+rich javascript text editor
+https://ckeditor.com/
+
+Demo:
+https://ckeditor.com/ckeditor-5/demo/feature-rich/
+
+CDN:
+https://ckeditor.com/docs/ckeditor4/latest/guide/dev_installation.html
+https://ckeditor.com/ckeditor-4/download/
+https://cdn.ckeditor.com/
+
+https://usbrandcolors.com/
+
+https://www.svgbackgrounds.com/elements/animated-svg-preloaders/
+
+https://moneysystemai.com/demo
+
+Deploy Project:
+https://firebase.google.com/
+يجب ان نقوم بتنزيل node js
+
+firebase serve لفحص المشروع قبل رفعه
+CTRL + C To shutdown local server
+
+firebase logout لتسجيل الخروج
+
+عند عمل تغييرات على  المشروع بعد فترة ونريد رفعها نقوم بتسجيل الدخول ورفع التغييرات
+1- firebase login
+2- firebase deploy
+
+https://elearning-dashboard-38dd3.web.app/
